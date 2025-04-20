@@ -161,6 +161,10 @@ export const Contact = () => {
           </div>
         </div>
       </RevealOnScroll>
+      {/* Copyright Section */}
+<div className="text-center text-sm text-gray-600 mt-10">
+&copy; {new Date().getFullYear()} Nikita Baniya. All rights reserved.
+</div>
     </section>
   );
 };
