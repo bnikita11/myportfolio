@@ -297,16 +297,24 @@ export const Projects = () => {
               </p>
 
               <div className="flex flex-wrap gap-2 mt-4">
-                {["React", "Vite", "HTML", "Tailwind CSS", "TypeScript"].map(
-                  (tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-[#f7b1bb] text-[#4e342e] py-1 px-3 rounded-full text-sm hover:bg-[#d2b9a3]/20 hover:shadow transition-all"
-                    >
-                      {tech}
-                    </span>
-                  )
-                )}
+                {[
+                  "React",
+                  "Vite",
+                  "HTML",
+                  "Tailwind CSS",
+                  "TypeScript",
+                  "Redux Toolkit",
+                  "React Router",
+                  "Axios",
+                  "JWT",
+                ].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="bg-[#f7b1bb] text-[#4e342e] py-1 px-3 rounded-full text-sm hover:bg-[#d2b9a3]/20 hover:shadow transition-all"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
 
               <div className="flex items-center gap-4  mt-6">
