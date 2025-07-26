@@ -15,12 +15,13 @@ export const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(
-      (conf.emailjsServiceId),
-      (conf.emailjsTemplateId),
-      formRef.current,
-      (conf.emailjsPublicKey)
-    )
+    emailjs
+      .sendForm(
+        conf.emailjsServiceId,
+        conf.emailjsTemplateId,
+        formRef.current,
+        conf.emailjsPublicKey
+      )
       .then(() => {
         alert("Message Sent!");
         setFormData({ name: "", email: "", message: "" });
@@ -44,8 +45,8 @@ export const Contact = () => {
             Get In Touch
           </h2>
           <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            I love to hear from you. Whether you have a question or just want
-            to chat about projects — shoot me a message.
+            I love to hear from you. Whether you have a question or just want to
+            chat about projects — shoot me a message.
           </p>
         </div>
 
@@ -64,9 +65,7 @@ export const Contact = () => {
             className="w-full bg-gradient-to-r from-[#d7a1a9] to-[#ff80e383] text-white placeholder-white/70 
                        py-3 px-6 rounded-lg font-medium transition duration-300 
                        outline-none focus:ring-2 focus:ring-[#d7a1a9] shadow-sm"
-            onChange={(e) =>
-              setFormData({ ...formData, name: e.target.value })
-            }
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
           />
 
           <input
@@ -119,9 +118,8 @@ export const Contact = () => {
                 href="mailto:nikitabaniya57@gmail.com"
                 className="flex items-center gap-2  hover:text-[#f886da]"
               >
-               <FaEnvelope /> nikitabaniya57@gmail.com
+                <FaEnvelope /> nikitabaniya57@gmail.com
               </a>
-             
             </p>
           </div>
 
@@ -162,9 +160,9 @@ export const Contact = () => {
         </div>
       </RevealOnScroll>
       {/* Copyright Section */}
-<div className="text-center text-sm text-gray-600 mt-10">
-&copy; {new Date().getFullYear()} Nikita Baniya. All rights reserved.
-</div>
+      <div className="text-center text-sm text-gray-600 mt-10">
+        &copy; {new Date().getFullYear()} Nikita Baniya. All rights reserved.
+      </div>
     </section>
   );
 };
