@@ -13,7 +13,10 @@ export const Home = () => {
           </h1>
 
           <p className="text-[#4e342e] text-lg mb-8 max-w-lg mx-auto">
-            A passionate frontend developer based in Nepal 🇳🇵. I love turning ideas into clean, responsive UI using React, Tailwind, and JavaScript. Right now, I'm building real-world projects and sharpening my dev sword every day 🗡️🔥
+            A passionate frontend developer based in Nepal 🇳🇵. I love turning
+            ideas into clean, responsive UI using React, Tailwind, and
+            JavaScript. Right now, I'm building real-world projects and
+            sharpening my dev sword every day 🗡️🔥
           </p>
 
           <div className="flex justify-center space-x-4">
@@ -40,7 +43,7 @@ export const Home = () => {
 
             {/* Download CV Button */}
             <a
-              href="/cv/nikscv.pdf" // Assuming the CV is located in the public/cv folder
+              href="/cv/NikitaResume.pdf" // Assuming the CV is located in the public/cv folder
               download
               className="bg-gradient-to-r from-[#e196a1] to-[#8f2d49] text-white py-3 px-6 rounded 
               font-medium transition relative overflow-hidden 
